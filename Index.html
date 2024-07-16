@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=" UTF-8">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <!-- Favicon -->
+        <link rel="short icon" href="" type="image/icon">
+        <!-- Internal CSS -->
+<style>
+
+*{
+box-sizing: border-box;
+padding:0;
+margin:0;
+}
+body{
+    background-color: rgb(74, 74, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.nac{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+  
+}
+.item1{
+    border: 2px solid wheat;
+    background-color: rgb(16, 192, 192);
+    padding: 20px;
+}
+.item2{
+    background-color:white;
+    border: 2px solid wheat;
+    padding:20px;
+}
+</style>
+
+    </head>
+    <body>
+     <div class="nac">
+        <h3> Connect</h3>
+        <a href="Home">Home</a>
+        <form action="">
+            <input type="text" value="search" placeholder="Search...">
+        </form>
+     </div>   
+     <div class="container">
+        <div class="item item1">
+            <h2> Let's Chat</h2>
+            <p> Whether you have a question, want <br> to start a project, or simply want to <br> Connect</p>
+            <br>
+            <p> Feel free tp send me a message in the contact form</p>
+        </div>
+        <div class="item item2">
+            <H2> Contact</H2>
+            <form action="">
+                <lable for="name">*Required</lable>
+                <br>
+                <input type="text" value="name"placeholder="Name*">
+                <br>
+                <input type="email" value="email" placeholder="Email*/">
+                <br>
+                <input type="text" value="Company" placeholder="Company">
+                <br>
+                <input type="number" value="Phone" placeholder="Phone">
+                <br>
+                <textarea name="msg" id="msg">Message</textarea>
+                <br>
+                <button type="sumbit">Here Go</button>
+            </form>
+        </div>
+     </div>
+    </body>
+</html>

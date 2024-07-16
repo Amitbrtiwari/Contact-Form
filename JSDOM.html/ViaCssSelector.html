@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript can refer HTML element by using DOM hierarchy</title>
+    <script>
+        function Amit(){
+           img.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsyXqSGQjjCCcuHfBr_RpW7vfvk6sZ2rUTwg&s";
+           //Java Script refer html elements via name//
+           //But if you want to call any child element you must first call the parent//
+form.btn.value="Register";
+document.querySelector('#login').value="Login";
+        }
+    </script>
+</head>
+<body onload="Amit()">
+    <!-- Event and function  -->
+    <img name="img" width="150px" height="150px" style="border:1px solid;">
+    <h1>Register</h1>
+    <form name="form">
+        <label for="name">User Name:</label>
+        <input type="text" name="name" id="name">
+        <input name="btn" type="button">
+        <h2>Login</h2>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <input id ="login"type="button">
+    </form>
+</body>
+</html>

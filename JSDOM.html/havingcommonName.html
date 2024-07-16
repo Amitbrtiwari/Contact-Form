@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script can refer html having common name</title>
+    <script>
+        function bodyload(){
+          result= document.getElementByName("pay");
+           alert("total number of payment method:" + result.length);
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <fieldset>
+        <lagend> payment</lagend>
+        <form >
+            <input type="radio" name="pay"> Cach
+            <input type="radio"name="pay"> UPI
+            <input type="radio" name="pay"> Credit Card
+        </form>
+    </fieldset>
+</body>
+</html>

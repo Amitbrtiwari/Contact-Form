@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating Content</title>
+    <script type="text/javascript">
+        function displayInnerText() {
+            alert(document.getElementById('contentExample').innerText);
+        }
+
+        function displayInnerHTML() {
+            alert(document.getElementById('contentExample').innerHTML);
+        }
+
+        function displayOuterHTML() {
+            alert(document.getElementById('contentExample').outerHTML);
+        }
+    </script>
+</head>
+<body>
+    <div id="contentExample">
+        <h2>This is the original content.</h2>
+        <p>It contains <strong>HTML elements</strong> and text.</p>
+    </div>
+
+    <button onclick="displayInnerText()">Display innerText</button>
+    <button onclick="displayInnerHTML()">Display innerHTML</button>
+    <button onclick="displayOuterHTML()">Display outerHTML</button>
+</body>
+</html>
